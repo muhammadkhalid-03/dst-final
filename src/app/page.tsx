@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [visibleElements, setVisibleElements] = useState({
@@ -109,7 +108,7 @@ export default function Home() {
           <p className="text-5xl text-center">The iPhone Now</p>
           <ul className="text-xl break-words text-justify space-y-2 leading-relaxed list-disc pl-8">
             <li>Apple Intelligence</li>
-            <li>New 'Camera' buttons</li>
+            <li>New Camera buttons</li>
             <li>Edge-to-edge display technology</li>
             <li>Premium materials</li>
             <li>Top-of the line Processing power</li>
