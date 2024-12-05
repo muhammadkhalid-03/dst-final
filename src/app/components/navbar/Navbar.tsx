@@ -1,8 +1,6 @@
 'use client';
 import Link from 'next/link';
-import Image from 'next/image';
 import MenuLink from './MenuLink';
-import { useEffect, useRef, useState } from 'react';
 
 
 const Navbar = () => {

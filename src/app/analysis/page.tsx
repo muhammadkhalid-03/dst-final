@@ -1,9 +1,6 @@
 'use client';
 
 import React from "react";
-import HistoricalEvolution from "../components/evolution/HistoricalEvolution";
-import CurrentApplications from "../components/evolution/CurrentApplications";
-import FutureProspects from "../components/evolution/FutureProspects";
 import TechnologicalAnalysis from "../components/analysis/TechnologicalAnalysis";
 
 export default function Home() {

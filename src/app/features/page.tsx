@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import FeaturesAnalysis from "../components/features/FeaturesAnalysis";
 
 export default function Home() {
