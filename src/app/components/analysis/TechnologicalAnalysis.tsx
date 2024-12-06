@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function TechnologicalAnalysis() {
+
+  const [showSummary, setShowSummary] = useState(true); // Track whether to show summary or description
+
   const analyses = [
     {
       title: "Technological Determinism",
@@ -47,7 +50,6 @@ export default function TechnologicalAnalysis() {
     <section className="py-12 bg-gradient-to-b from-gray-100 to-gray-200 rounded-2xl">
       <div className="max-w-7xl mx-auto space-y-12 gap-8 p-6">
         {analyses.map((analysis, index) => {
-          const [showSummary, setShowSummary] = useState(true); // Track whether to show summary or description
           return (
             <div
               key={index}
