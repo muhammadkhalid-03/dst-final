@@ -19,6 +19,7 @@ const MenuLink: React.FC<MenuLinkProps> = ({ type, onOpen }) => {
                 { name: 'Apple AI', href: '/appleAI' },
                 { name: 'Features', href: '/features' },
                 { name: 'Analysis', href: '/analysis' },
+                { name: 'References', href: '/references' },
             ].map((item) => (
                     <Link key={item.name} href={item.href} onClick={onOpen} passHref>
                         <div className='relative group pb-2 flex flex-col items-center'>

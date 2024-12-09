@@ -7,19 +7,19 @@ export default function FutureProspects() {
     {
       title: "Generative AI",
       description:
-        "Future Apple AI could enable users to create personalized content such as AI-generated playlists, photo editing tools, or even custom AR experiences.",
+        "Future Apple AI could enable users to automate their lives, communicate with other devices, and so much more...",
       image: "/appleai.jpeg",
     },
     {
       title: "Health Advancements",
       description:
-        "Apple's AI may integrate with wearable devices to monitor glucose levels, mental health, or even detect early signs of illness using predictive analytics.",
+        "Apple's AI may integrate with wearable devices to monitor glucose levels, mental health, or even detect early signs of illness using predictive analytics & Generative AI.",
       image: "/applehealth.jpeg",
     },
     {
       title: "Spatial Computing",
       description:
-        "With LiDAR technology and advanced AR capabilities, the iPhone enables immersive experiences, from AI powered photography to enhanced productivity in apps like Measure and Maps. Apple's continued advancements in spatial computing with the help of AI will redefine how we interact with the physical and digital worlds using the iPhone.",
+        "With LiDAR technology and advanced AR capabilities, the iPhone enables immersive experiences, from AI powered photography to enhanced productivity in apps like Measure and Maps. Apple's continued advancements in spatial computing with the help of AI are exciting to think about and might change how we view the digital world in our reality.",
       image: "/applephotos.jpeg",
     },
   ];

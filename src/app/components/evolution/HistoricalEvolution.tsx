@@ -17,7 +17,7 @@ export default function HistoricalEvolution() {
     {
       year: "2017",
       title: "Core ML Introduced",
-      description: "Developers gained access to machine learning capabilities directly on iOS devices.",
+      description: "Developers gained access to machine learning capabilities directly on iOS devices allowing Face ID.",
     },
     {
       year: "2020",
@@ -25,9 +25,9 @@ export default function HistoricalEvolution() {
       description: "Apple moved Siri processing on-device, enhancing privacy and speed.",
     },
     {
-      year: "2023",
-      title: "Vision Pro Integration",
-      description: "AI-powered spatial computing introduced with Vision Pro redefined user interactions.",
+      year: "2024",
+      title: "Apple AI Integration",
+      description: "AI-powered tools allow for a far broader range of tasks on the iPhone such as writing tools and notification summary among others.",
     },
   ];
 

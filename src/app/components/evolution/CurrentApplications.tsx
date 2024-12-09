@@ -47,13 +47,19 @@ export default function CurrentApplications() {
       title: "Encourage",
       sub: "Edge Glow",
       description:"The iPhone encourages using its AI assistant for automation through the border light.",
-      img: "/300x0w.jpg"
+      img: "/glow.jpeg"
     },
     {
       title: "Discourage",
       sub: "Third-party Assistant",
-      description:"Apple discourages the use of AI assistants like Alexa or Google Assistant by integrating Siri deeply into its ecosystem and not allowing alternative defaults.",
-      img: "/siri-settings.jpeg"
+      description:"Apple refuses to let the user utilize other AI assistants like Alexa or Google Assistant by integrating Siri deeply into its ecosystem and not allowing alternative defaults.",
+      img: "/settings.jpeg"
+    },
+    {
+      title: "Refuse",
+      sub: "Default Apps",
+      description:"Apple's siri discourages the use of non-Apple apps such as making Apple Music a default app compared to spotify.",
+      img: "/apple-music.jpeg"
     }
   ];
 
@@ -86,7 +92,7 @@ export default function CurrentApplications() {
         {affordances.map((app, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform duration-300 space-y-8"
+            className="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform duration-300 flex-1 space-y-4 justify-between"
           >
             <span className="text-xl text-blue-700 font-bold">{app.sub}</span>
         <Image
