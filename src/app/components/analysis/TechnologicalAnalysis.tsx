@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export default function TechnologicalAnalysis() {
 
-  const [showSummary, setShowSummary] = useState(true); // Track whether to show summary or description
 
   const analyses = [
     {
@@ -49,121 +48,55 @@ export default function TechnologicalAnalysis() {
   return (
     <section className="py-12 bg-gradient-to-b from-gray-100 to-gray-200 rounded-2xl">
       <div className="max-w-7xl mx-auto space-y-12 gap-8 p-6">
-        {analyses.map((analysis, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center text-center bg-white p-8 shadow-lg rounded-lg hover:scale-105 transition-transform duration-300"
-            >
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4 no-underline hover:underline">
-                <Link href={analysis.link} target="_blank" passHref>
-                  {analysis.title}
-                </Link>
-              </h3>
-              {/* Content Toggle */}
-              <div className="bg-gray-50 p-4 rounded-lg text-gray-600 mb-4 w-full">
-                {showSummary ? (
-                  <ul className="text-left text-gray-700 list-disc list-inside">
-                    <li>{analysis.summary1}</li>
-                    <li>{analysis.summary2}</li>
-                    <li>{analysis.summary3}</li>
-                  </ul>
-                ) : (
-                  <p>{analysis.fullDescription}</p>
-                )}
-              </div>
-              {/* Toggle Button */}
-              <button
-                onClick={() => setShowSummary(!showSummary)}
-                className="mt-4 px-6 py-2 bg-indigo-500 text-white rounded-lg shadow-md hover:bg-indigo-600 transition duration-200"
-              >
-                {showSummary ? "View Full Description" : "View Summary"}
-              </button>
-            </div>
-          );
-        })}
+        {analyses.map((analysis, index) => (
+          <Card key={index} analysis={analysis} />
+        ))}
       </div>
     </section>
   );
-  
-  
+
+
+}
+interface Analysis {
+  title: string;
+  fullDescription: string;
+  summary1: string;
+  summary2: string;
+  summary3: string;
+  link: string;
 }
 
-
-
-// 'use client';
-
-// import { useState } from "react";
-// import Link from "next/link";
-
-// export default function TechnologicalAnalysis() {
-//   const analyses = [
-//     {
-//       title: "Technological Determinism",
-//       fullDescription:
-//         "Technological determinism explores the idea that technology affects society in predetermined ways. This concept begs us to consider whether the iPhone, as a technological artifact, has steered communication and cultural norms, or if it is simply a reflection of society's existing needs. When the iPhone was first introduced in 2007, it shook the world by blending a phone, an iPod, and an internet communicator into a single device. It redefined what a phone could be and what it meant to be 'connected'...",
-//       summary:
-//         "Technological determinism explores the idea that technology affects society in predetermined ways. Does the iPhone steer culture, or reflect it?",
-//       link: "https://www.communicationtheory.org/technological-determinism/",
-//     },
-//     {
-//       title: "Affordances",
-//       fullDescription:
-//         "The iPhone's design and features, such as its touchscreen interface and app ecosystem, portray affordances that shape how users interact with technology. The touchscreen, for instance, offers a direct way to interact with content using fingers. These affordances extend beyond individual use however, influencing industries like entertainment, healthcare, and education...",
-//       summary:
-//         "The iPhone's design and features (e.g., touchscreen, app ecosystem) shape how users and industries interact with technology.",
-//       link: "https://www.jennyldavis.com/how-artifacts-afford-the-power-and-politics-of-everyday-things",
-//     },
-//     {
-//       title: "Articulation, Assemblage, and Politics",
-//       fullDescription:
-//         "The iPhone serves as a central element of the Apple ecosystem. Its role in this ecosystem—connecting devices like iPads, MacBooks, and Apple Watches—demonstrates articulation through standardized interfaces that facilitate communication within these devices. This assemblage transforms devices from acting as individual artifacts to a network of artifacts...",
-//       summary:
-//         "The iPhone, as part of Apple's ecosystem, transforms devices into a network that highlights convenience and exclusivity.",
-//       link: "http://claireshannon317.blogspot.com/2014/06/articulation-assemblage.html",
-//     },
-//     {
-//       title: "Social Construction of Technology",
-//       fullDescription:
-//         "The development of the iPhone created multiple relevant social groups (e.g., consumers, designers) that influenced its evolution. In a broader social and economic context, the iPhone had ripple effects on users, industries, and government. For example, consumers' demands for convenience and connectivity led to the development of features like iMessage and the App Store...",
-//       summary:
-//         "The iPhone's evolution reflects societal needs, influencing industries, policies, and user behavior.",
-//       link: "https://www.alice.id.tue.nl/references/pinch-bijker-1984.pdf",
-//     },
-//   ];
-
-//   return (
-//     <section className="py-12 bg-gradient-to-b from-gray-100 to-gray-200 rounded-2xl">
-//       <div className="max-w-7xl mx-auto space-y-6 p-6">
-//         {analyses.map((analysis, index) => (
-//           <ExpandableCard key={index} analysis={analysis} />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-// function ExpandableCard({ analysis }) {
-//   const [expanded, setExpanded] = useState(false);
-
-//   const toggleExpand = () => setExpanded(!expanded);
-
-//   return (
-//     <div className="flex flex-col items-center justify-center text-center bg-white p-8 shadow-lg rounded-lg hover:scale-105 transition-transform duration-300">
-//       <h3 className="text-2xl font-semibold text-indigo-700 mb-4 no-underline hover:underline">
-//         <Link href={analysis.link} target="_blank" passHref>
-//           {analysis.title}
-//         </Link>
-//       </h3>
-//       <p className="text-gray-600 mb-4">
-//         {expanded ? analysis.fullDescription : analysis.summary}
-//       </p>
-//       <button
-//         onClick={toggleExpand}
-//         className="text-indigo-700 font-semibold hover:underline"
-//       >
-//         {expanded ? "Read Less" : "Read More →"}
-//       </button>
-//     </div>
-//   );
-// }
+function Card({ analysis }: { analysis: Analysis }) {
+  const [showSummary, setShowSummary] = useState(true);
+  return (
+    <div
+      // key={index}
+      className="flex flex-col items-center justify-center text-center bg-white p-8 shadow-lg rounded-lg hover:scale-105 transition-transform duration-300"
+    >
+      <h3 className="text-2xl font-semibold text-indigo-700 mb-4 no-underline hover:underline">
+        <Link href={analysis.link} target="_blank" passHref>
+          {analysis.title}
+        </Link>
+      </h3>
+      {/* Content Toggle */}
+      <div className="bg-gray-50 p-4 rounded-lg text-gray-600 mb-4 w-full">
+        {showSummary ? (
+          <ul className="text-left text-gray-700 list-disc list-inside">
+            <li>{analysis.summary1}</li>
+            <li>{analysis.summary2}</li>
+            <li>{analysis.summary3}</li>
+          </ul>
+        ) : (
+          <p>{analysis.fullDescription}</p>
+        )}
+      </div>
+      {/* Toggle Button */}
+      <button
+        onClick={() => setShowSummary(!showSummary)}
+        className="mt-4 px-6 py-2 bg-indigo-500 text-white rounded-lg shadow-md hover:bg-indigo-600 transition duration-200"
+      >
+        {showSummary ? "View Full Description" : "View Summary"}
+      </button>
+    </div>
+  );
+}
