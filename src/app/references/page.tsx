@@ -1,6 +1,5 @@
 'use client';
 
-import FeaturesAnalysis from "../components/features/FeaturesAnalysis";
 
 export default function Home() {
     return (
@@ -17,6 +16,7 @@ export default function Home() {
               <li>https://www.jennyldavis.com/how-artifacts-afford-the-power-and-politics-of-everyday-things</li>
               <li>http://claireshannon317.blogspot.com/2014/06/articulation-assemblage.html</li>
               <li>https://www.alice.id.tue.nl/references/pinch-bijker-1984.pdf</li>
+              <li>https://www.digit.in/features/mobile-phones/a-timeline-of-ai-features-on-apple-iphone-the-past-and-the-present.html#:~:text=Apple%20had%20the%20vision%20of,was%20called%20“Knowledge%20Navigator”.</li>
             </ul>
         </main>
     )
