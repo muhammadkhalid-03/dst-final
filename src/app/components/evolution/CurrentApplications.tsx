@@ -29,37 +29,43 @@ export default function CurrentApplications() {
       title: "Request",
       sub: "Predictive Text",
       description: "AI requests the user to consider auto-suggestions for faster typing by displaying word predictions.",
-      img: "/predictive-text.jpeg"
+      img: "/predictive-text.jpeg",
+      source: "reddit"
     },
     {
       title: "Demand",
       sub: "Crash Detection",
       description: "The iPhone, through AI, demands a user response by default after detecting a potential crash to confirm if emergency services are required. This can be switched off in settings.",
-      img: "/crash.jpeg"
+      img: "/crash.jpeg",
+      source: "macrumors"
     },
     {
       title: "Allow",
       sub: "Text Extraction",
       description:"AI allows users to extract text from images without requiring manual copying.",
-      img: "/extraction.jpeg"
+      img: "/extraction.jpeg",
+      source: "cnbc"
     },
     {
       title: "Encourage",
       sub: "Edge Glow",
       description:"The iPhone encourages using its AI assistant for automation through the border light.",
-      img: "/glow.jpeg"
+      img: "/glow.jpeg",
+      source: "reddit"
     },
     {
       title: "Discourage",
       sub: "Third-party Assistant",
       description:"Apple refuses to let the user utilize other AI assistants like Alexa or Google Assistant by integrating Siri deeply into its ecosystem and not allowing alternative defaults.",
-      img: "/settings.jpeg"
+      img: "/settings.jpeg",
+      source: "macrumors"
     },
     {
       title: "Refuse",
       sub: "Default Apps",
       description:"Apple's siri discourages the use of non-Apple apps such as making Apple Music a default app compared to spotify.",
-      img: "/apple-music.jpeg"
+      img: "/apple-music.jpeg",
+      source: "apple"
     }
   ];
 
@@ -102,9 +108,11 @@ export default function CurrentApplications() {
           height={300}
           className="rounded-xl shadow-lg"
           />
+          <p className="text-gray-400 text-sm">Source: {app.source}</p>
           <p className="flex justify-center items-center space-x-2">
             <span className="text-gray-600">{app.description}</span>
-          </p>          </div>
+          </p>          
+          </div>
         ))}
       </div>
     </section>

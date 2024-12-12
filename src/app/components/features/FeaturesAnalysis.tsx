@@ -8,37 +8,43 @@ export default function FeaturesAnalysis() {
       title: "Siri",
       description:
         "Siri enables hands-free interaction, shaping user behavior through task management and personalized assistance. By acting as an agent in the user's network, it reshapes user behavior by anticipating needs, managing tasks, and creating personalized interaction patterns. Siri reflects how AI technologies shape and are shaped by user practices.",
-      image: "/siri.jpeg", // Replace with your image path
+      image: "/siri.jpeg",
+      source: "Apple"
     },
     {
       title: "Face ID",
       description:
         "Face ID exemplifies the intersection between biometric technology, privacy, and social control. It transforms facial characteristics into digital credentials. This technology highlights the ongoing negotiation between technological convenience, personal privacy, a need to make our lives more convenient.",
-      image: "/faceid.png", // Replace with your image path
+      image: "/faceid.png",
+      source: "Apple"
     },
     {
       title: "Photography",
       description:
         "Features like Night Mode and Portrait Mode showcase how algorithms enhance creativity, enabling professional-grade photography accessible to everyone. These features influence how individuals perceive, capture, and share visual experiences in the digital age.",
-      image: "/photography.jpeg", // Replace with your image path
+      image: "/photography.jpeg",
+      source: "RedShark News"
     },
     {
       title: "Find my iPhone",
       description:
         "An example of technological mediation, Find My iPhone transforms device loss from an individual problem to a networked solution. It illustrates how technological systems create new forms of social coordination through distributed tracking with a vast network of iphones.",
-      image: "/find-my-iphone.jpeg", // Replace with your image path
+      image: "/find-my-iphone.jpeg",
+      source: "Apple"
     },
     {
       title: "Apple Ecosystem Integration",
       description:
         "The Apple ecosystem demonstrates articulation through standardized interfaces where devices communicate seamlessly. As an assemblage, it transforms individual technologies into a dynamic network where MacBooks, iPhones, and iPads become nodes that are connected to each other, creating a technological environment that adapts to user interactions.",      
-        image: "/ecosystem.jpeg", // Replace with your image path
+      image: "/ecosystem.jpeg",
+      source: "MacRumors"
     },
     {
       title: "Exclusivity",
       description:
         "Apple's closed ecosystem, showcased by apps like iMessage and Airdrop, demonstrates social stratification by creating 2 distinct categories of smartphone users called 'iPhone users' and 'Android users'. These platforms reinforce user loyalty through technological differentiation, illustrating how technological systems evolve to maintain competitive advantage.",
-      image: "/exclusivity.jpeg", // Replace with your image path
+      image: "/exclusivity.jpeg",
+      source: "Reuters"
     },
   ];
 
@@ -58,6 +64,7 @@ export default function FeaturesAnalysis() {
               height={150}
               className="mb-4"
             />
+            <p className="text-gray-400 text-sm pb-6">Source: {feature.source}</p>
             <h3 className="text-2xl font-semibold text-blue-700 mb-4">
               {feature.title}
             </h3>

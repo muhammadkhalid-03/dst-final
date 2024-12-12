@@ -9,18 +9,21 @@ export default function FutureProspects() {
       description:
         "Future Apple AI could enable users to automate their lives, communicate with other devices, and so much more...",
       image: "/appleai.jpeg",
+      source: "AppleInsider"
     },
     {
       title: "Health Advancements",
       description:
         "Apple's AI may integrate with wearable devices to monitor glucose levels, mental health, or even detect early signs of illness using predictive analytics & Generative AI.",
       image: "/applehealth.jpeg",
+      source: "Apple"
     },
     {
       title: "Spatial Computing",
       description:
         "With LiDAR technology and advanced AR capabilities, the iPhone enables immersive experiences, from AI powered photography to enhanced productivity in apps like Measure and Maps. Apple's continued advancements in spatial computing with the help of AI are exciting to think about and might change how we view the digital world in our reality.",
       image: "/applephotos.jpeg",
+      source: "Almabetter.com"
     },
   ];
 
@@ -47,7 +50,7 @@ export default function FutureProspects() {
             </div>
 
             {/* Image */}
-            <div className="md:w-1/2 flex justify-center">
+            <div className="md:w-1/2 flex flex-col items-center justify-center">
               <Image
                 src={prospect.image}
                 alt={prospect.title}
@@ -55,6 +58,7 @@ export default function FutureProspects() {
                 height={300}
                 className="rounded-lg shadow-lg"
               />
+              <p className="text-gray-400 text-sm">Source: {prospect.source}</p>
             </div>
           </div>
         ))}

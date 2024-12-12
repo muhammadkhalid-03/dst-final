@@ -39,9 +39,10 @@ export default function Home() {
           <Image
             src="/iphone-1-removebg-preview.png"
             alt="iPhone"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
+          <p className="text-gray-400 text-center text-lg">Source: eBay</p>
         </div>
 
         <div
@@ -84,9 +85,10 @@ export default function Home() {
           <Image
             src="/iphone-x-removebg-preview.png"
             alt="iPhone Design"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
+          <p className="text-gray-400 text-center text-lg">Source: Alamy.com</p>
         </div>
       </section>
 
@@ -99,9 +101,10 @@ export default function Home() {
           <Image
             src="/iphone16-removebg-preview.png"
             alt="iPhone Design"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
+          <p className="text-gray-400 text-center text-lg">Source: Apple</p>
         </div>
         <div
           className='flex flex-col items-center space-y-8 max-w-xl transform transition-all duration-1000 ease-out delay-500'>

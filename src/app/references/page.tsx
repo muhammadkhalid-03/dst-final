@@ -17,6 +17,7 @@ export default function Home() {
               <li>Jennifer Daryl Slack, and J Macgregor Wise. Culture and Technology : A Primer. New York, Peter Lang, 2015.</li>
               <li>Bijker, Wiebe E, et al. The Social Construction of Technological Systems : New Directions in the Sociology and History of Technology. Cambridge, Massachusetts, The Mit Press, 2012.</li>
               <li>https://www.facebook.com/satvik.pandey19. “A Timeline of AI Features on Apple IPhone: The Past and the Present.” Digit , 9 Sept. 2024, www.digit.in/features/mobile-phones/a-timeline-of-ai-features-on-apple-iphone-the-past-and-the-present.html.</li>
+              <li>Winner, Langdon. Autonomous Technology : Technics-Out-of-Control as a Theme in Political Thought. Cambridge, Mass. Mit Pr, 2001.</li>
             </ul>
         </main>
     )
