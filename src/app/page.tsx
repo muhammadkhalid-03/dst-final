@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -42,7 +43,11 @@ export default function Home() {
             width={300}
             height={300}
           />
-          <p className="text-gray-400 text-center text-lg">Source: eBay</p>
+          <p className="text-gray-400 text-center text-lg">
+            <Link href="https://www.ebay.com/itm/124819833429" target="_blank" passHref>
+              Source: eBay
+            </Link>
+          </p>
         </div>
 
         <div
@@ -88,7 +93,11 @@ export default function Home() {
             width={300}
             height={300}
           />
-          <p className="text-gray-400 text-center text-lg">Source: Alamy.com</p>
+          <p className="text-gray-400 text-center text-lg">
+            <Link href="https://www.alamy.com/stock-photo-new-apple-iphone-x-10-front-view-on-white-background-new-features-173304651.html" target="_blank" passHref>
+              Source: Alamy.com
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -104,7 +113,11 @@ export default function Home() {
             width={300}
             height={300}
           />
-          <p className="text-gray-400 text-center text-lg">Source: Apple</p>
+          <p className="text-gray-400 text-center text-lg">
+              <Link href="https://www.apple.com/newsroom/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/" target="_blank" passHref>
+              Source: Apple
+              </Link>
+            </p>
         </div>
         <div
           className='flex flex-col items-center space-y-8 max-w-xl transform transition-all duration-1000 ease-out delay-500'>

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CurrentApplications() {
   const applications = [
@@ -30,42 +31,48 @@ export default function CurrentApplications() {
       sub: "Predictive Text",
       description: "AI requests the user to consider auto-suggestions for faster typing by displaying word predictions.",
       img: "/predictive-text.jpeg",
-      source: "reddit"
+      source: "reddit",
+      link: "https://www.reddit.com/r/iphone/comments/14qyppc/predictive_text_fail/"
     },
     {
       title: "Demand",
       sub: "Crash Detection",
       description: "The iPhone, through AI, demands a user response by default after detecting a potential crash to confirm if emergency services are required. This can be switched off in settings.",
       img: "/crash.jpeg",
-      source: "macrumors"
+      source: "macrumors",
+      link: "https://www.macrumors.com/2023/04/05/crash-detection-support-document-update/"
     },
     {
       title: "Allow",
       sub: "Text Extraction",
       description:"AI allows users to extract text from images without requiring manual copying.",
       img: "/extraction.jpeg",
-      source: "cnbc"
+      source: "cnbc",
+      link: "https://www.cnbc.com/2021/09/29/ios-15-live-text-how-to-copy-and-paste-text-from-a-photo.html"
     },
     {
       title: "Encourage",
       sub: "Edge Glow",
       description:"The iPhone encourages using its AI assistant for automation through the border light.",
       img: "/glow.jpeg",
-      source: "reddit"
+      source: "reddit",
+      link: "https://www.reddit.com/r/iphone/comments/1h1a6ob/i_phone_16_edges_glow/"
     },
     {
       title: "Discourage",
       sub: "Third-party Assistant",
       description:"Apple refuses to let the user utilize other AI assistants like Alexa or Google Assistant by integrating Siri deeply into its ecosystem and not allowing alternative defaults.",
       img: "/settings.jpeg",
-      source: "macrumors"
+      source: "macrumors",
+      link: "https://www.macrumors.com/guide/ios-16-siri/"
     },
     {
       title: "Refuse",
       sub: "Default Apps",
       description:"Apple's siri discourages the use of non-Apple apps such as making Apple Music a default app compared to spotify.",
       img: "/apple-music.jpeg",
-      source: "apple"
+      source: "apple",
+      link: "https://www.apple.com/newsroom/2023/06/apple-previews-new-features-coming-to-apple-services-this-fall/"
     }
   ];
 
@@ -108,7 +115,11 @@ export default function CurrentApplications() {
           height={300}
           className="rounded-xl shadow-lg"
           />
-          <p className="text-gray-400 text-sm">Source: {app.source}</p>
+          <p className="text-gray-400 text-sm">
+            <Link href={app.link} target="_blank" passHref>
+              Source: {app.source}
+            </Link>
+          </p>
           <p className="flex justify-center items-center space-x-2">
             <span className="text-gray-600">{app.description}</span>
           </p>          
