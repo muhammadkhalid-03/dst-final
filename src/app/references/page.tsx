@@ -12,12 +12,13 @@ export default function Home() {
               <li>Travers, Mark. “The “IPhone Effect”: Are IPhone Users More Attractive than Androiders?” Forbes, 30 Dec. 2023, www.forbes.com/sites/traversmark/2023/12/30/the-iphone-effect-are-iphone-users-more-attractive-than-androiders/.</li>
               <li>Wörsdörfer, Manuel. “Apple's Antitrust Paradox.” European Competition Journal, vol. 20, no. 1, 28 Sept. 2023, pp. 1-34, https://doi.org/10.1080/17441056.2023.2262870.</li>
               <li>Chen, Brian X. “Apple's A.I. Is Landing Soon on IPhones. Here's What It's Like.” Nytimes.com, The New York Times, 2 Oct. 2024, www.nytimes.com/2024/10/02/technology/personaltech/apple-intelligence-iphone.html.</li>
-              <li>“Technological Determinism.” Communication Theory, 23 Apr. 2018, www.communicationtheory.org/technological-determinism/.</li>
-              <li>Davis, Jenny L. “Jenny L Davis.” Jenny L Davis, 2014, www.jennyldavis.com/how-artifacts-afford-the-power-and-politics-of-everyday-things. Accessed 12 Dec. 2024.</li>
-              <li>Jennifer Daryl Slack, and J Macgregor Wise. Culture and Technology : A Primer. New York, Peter Lang, 2015.</li>
-              <li>Bijker, Wiebe E, et al. The Social Construction of Technological Systems : New Directions in the Sociology and History of Technology. Cambridge, Massachusetts, The Mit Press, 2012.</li>
+              <li>Jenny L. Davis and James B. Chouinard, “Theorizing Affordances: From Request to Refuse,” Bulletin of Science, Technology & Society 36, no. 4 (2016): 241-248.</li>
+              <li>Slack & Wise, “Technology as Articulation,” from Chapter 12, “Articulation and Assemblage,” pp. 152-156, in Culture and Technology: A Primer (2015).</li>
+              <li>Trevor J. Pinch and Wiebe E. Bijker, excerpt from “The Social Construction of Facts and Artifacts: Or How the Sociology of Science and the Sociology of Technology Might Benefit Each Other,” from The Social Construction of Technological Systems, Anniversary Edition: New Directions in the Sociology and History of Technology (2012), pp. 21-40.</li>
               <li>https://www.facebook.com/satvik.pandey19. “A Timeline of AI Features on Apple IPhone: The Past and the Present.” Digit , 9 Sept. 2024, www.digit.in/features/mobile-phones/a-timeline-of-ai-features-on-apple-iphone-the-past-and-the-present.html.</li>
-              <li>Winner, Langdon. Autonomous Technology : Technics-Out-of-Control as a Theme in Political Thought. Cambridge, Mass. Mit Pr, 2001.</li>
+              <li>Langdon Winner, excerpts from “Technological Determinism,” in Autonomous Technology: Technics-out-of-Control as a Theme in Political Thought (1977), pp. 75-79, 84-88.</li>
+              <li>Langdon Winner, “Do Artifacts Have Politics” (originally published in The Whale and the Reactor,1986), in Readings in the Philosophy of Technology (2009), chapter 17, pp. 251-263.</li>
+              <li>Slack & Wise, Chapter 4, “Determinism,” in Culture and Technology: A Primer (2015), pp. 49-57.</li>
             </ul>
         </main>
     )
